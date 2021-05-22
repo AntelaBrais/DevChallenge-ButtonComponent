@@ -10,12 +10,7 @@ export default {
 const Template = (args) => <Button {...args} />
 
 export const Default = Template.bind({})
-Default.args = {
-  color: "default",
-  disabled: false,
-  disabledShadow: false,
-  size: "md",
-}
+Default.args = {}
 
 export const Small = Template.bind({})
 Small.args = {
@@ -27,6 +22,12 @@ export const Large = Template.bind({})
 Large.args = {
   ...Default.args,
   size: "lg",
+}
+
+export const Primary = Template.bind({})
+Primary.args = {
+  ...Default.args,
+  color: "primary",
 }
 
 export const Secondary = Template.bind({})
@@ -63,4 +64,16 @@ export const Text = Template.bind({})
 Text.args = {
   ...Default.args,
   variant: "text",
+}
+
+export const StartIcon = Template.bind({})
+StartIcon.args = {
+  ...Default.args,
+  startIcon: "local_grocery_store",
+}
+
+export const EndIcon = Template.bind({})
+EndIcon.args = {
+  ...Default.args,
+  endIcon: "local_grocery_store",
 }

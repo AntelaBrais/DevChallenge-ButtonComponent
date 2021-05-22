@@ -10,8 +10,8 @@
   align-items: center;
 }
 
-.baseStyle > i {
-  padding-right: 10px;
+.baseStyle *:nth-child(2) {
+  padding-left: 10px;
 }
 
 .baseStyle:hover,
@@ -78,6 +78,7 @@
 }
 
 .outline {
+  color: #3d5afe;
   border: 1px solid #3d5afe;
   background-color: transparent;
 }

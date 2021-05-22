@@ -71,7 +71,7 @@ function Button(props) {
       {props.startIcon ? (
         <i className='material-icons'>{props.startIcon}</i>
       ) : null}
-      {props.title ? props.title : "Default"}
+      {props.title ? <text>{props.title}</text> : <text>Default</text>}
       {props.endIcon ? <i className='material-icons'>{props.endIcon}</i> : null}
     </button>
   )
