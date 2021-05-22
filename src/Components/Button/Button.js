@@ -68,9 +68,11 @@ function Button(props) {
       className={changeStyle(props)}
       onClick={() => console.log("Hello")}
       {...props}>
-      {props.startIcon ? <i class='material-icons'>{props.startIcon}</i> : null}
+      {props.startIcon ? (
+        <i className='material-icons'>{props.startIcon}</i>
+      ) : null}
       {props.title ? props.title : "Default"}
-      {props.endIcon ? <i class='material-icons'>{props.endIcon}</i> : null}
+      {props.endIcon ? <i className='material-icons'>{props.endIcon}</i> : null}
     </button>
   )
 }

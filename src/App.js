@@ -1,5 +1,5 @@
 import logo from "./logo.svg"
-import { Button } from "./Components"
+import { Button } from "./components"
 
 function App() {
   return (
